@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Appservice/Appservice.iml" filepath="$PROJECT_DIR$/Appservice/Appservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Loginservice/Loginservice.iml" filepath="$PROJECT_DIR$/Loginservice/Loginservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reportservice/Reportservice.iml" filepath="$PROJECT_DIR$/Reportservice/Reportservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SYTYCC.iml" filepath="$PROJECT_DIR$/SYTYCC.iml" />
+    </modules>
+  </component>
+</project>
