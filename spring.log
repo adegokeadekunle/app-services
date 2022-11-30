@@ -597,3 +597,24 @@ Original Stack Trace:
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.85.Final.jar:4.1.85.Final]
 		at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+2022-11-30T02:32:40.250+01:00  INFO 55124 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30T02:32:40.601+01:00  INFO 55124 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30T02:32:40.675+01:00  INFO 55124 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-30T02:32:51.772+01:00  INFO 55905 --- [main] c.e.appservice.AppserviceApplication     : Starting AppserviceApplication using Java 17.0.2 with PID 55905 (/Users/admin/IdeaProjects/SYTYCC/Appservice/target/classes started by admin in /Users/admin/IdeaProjects/SYTYCC)
+2022-11-30T02:32:51.777+01:00  INFO 55905 --- [main] c.e.appservice.AppserviceApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-11-30T02:32:53.595+01:00  INFO 55905 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-30T02:32:54.189+01:00  INFO 55905 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 563 ms. Found 1 JPA repository interfaces.
+2022-11-30T02:32:55.935+01:00  INFO 55905 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-30T02:32:56.124+01:00  INFO 55905 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-11-30T02:32:56.579+01:00  WARN 55905 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-11-30T02:32:56.982+01:00  INFO 55905 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-30T02:32:57.588+01:00  INFO 55905 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2/Appservice user=SA
+2022-11-30T02:32:57.592+01:00  INFO 55905 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-30T02:32:57.655+01:00  INFO 55905 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-30T02:32:59.342+01:00  INFO 55905 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-30T02:32:59.362+01:00  INFO 55905 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30T02:33:01.203+01:00  INFO 55905 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 4000
+2022-11-30T02:33:01.218+01:00  INFO 55905 --- [main] c.e.appservice.AppserviceApplication     : Started AppserviceApplication in 10.634 seconds (process running for 11.983)
+2022-11-30T02:33:11.976+01:00  INFO 55905 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-30T02:33:11.982+01:00  INFO 55905 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-30T02:33:11.986+01:00  INFO 55905 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
