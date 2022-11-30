@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Appservice" />
         <module name="Reportservice" />
-        <module name="SYTYCC" />
         <module name="Loginservice" />
       </profile>
     </annotationProcessing>
@@ -22,9 +21,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Appservice" options="-parameters" />
+      <module name="Appservice" options="-parameters --add-modules java.base" />
       <module name="Loginservice" options="-parameters" />
-      <module name="Reportservice" options="-parameters" />
+      <module name="Reportservice" options="-parameters --add-modules java.base" />
       <module name="SYTYCC" options="-parameters" />
     </option>
   </component>
