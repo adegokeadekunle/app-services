@@ -1,5 +1,6 @@
 package com.example.appservice.app;
 
+import com.example.appservice.app.commonModels.Report;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +17,7 @@ public class AppController {
 
     @GetMapping("/get-service")
     @ResponseStatus(HttpStatus.OK)
-    ResponseEntity<Application> getService(@RequestParam("app-service") AppServicesEnum service){
+    ResponseEntity<Report> getService(@RequestParam("app-service") AppServicesEnum service){
         return appService.getService(service);
     }
 

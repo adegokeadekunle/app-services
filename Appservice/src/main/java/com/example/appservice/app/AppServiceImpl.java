@@ -1,11 +1,15 @@
 package com.example.appservice.app;
 
+import com.example.appservice.app.commonModels.Report;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.usertype.ParameterizedType;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -16,14 +20,17 @@ public class AppServiceImpl implements AppService {
     private final WebClient webClient;
 
     @Override
-    public ResponseEntity<Application> getService(AppServicesEnum service) {
+    public ResponseEntity<List<Report>> getService(AppServicesEnum service) {
         String uri = service.getService();
 
-        Application app= webClient.get()
+
+        List<Report> report = new ArrayList<> ();
+        Report[] app= webClient.get()
                 .uri(uri)
                 .retrieve()
-                .bodyToMono(Application.class)
+                .bodyToMono(Report[].class)
                 .block();
+
 
         return new ResponseEntity<>(app,HttpStatus.OK);
     }

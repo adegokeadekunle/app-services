@@ -6,6 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/Loginservice/Loginservice.iml" filepath="$PROJECT_DIR$/Loginservice/Loginservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Reportservice/Reportservice.iml" filepath="$PROJECT_DIR$/Reportservice/Reportservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/SYTYCC.iml" filepath="$PROJECT_DIR$/SYTYCC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blacklist/blacklist.iml" filepath="$PROJECT_DIR$/blacklist/blacklist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notificationservice/notificationservice.iml" filepath="$PROJECT_DIR$/notificationservice/notificationservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/setting/setting.iml" filepath="$PROJECT_DIR$/setting/setting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
     </modules>
   </component>
 </project>
