@@ -27,15 +27,26 @@ public class ReportServiceImpl implements ReportService {
     @Override
     public ResponseEntity<Report> getReport(Long reportId) {
         Report report = reportRepository.findById(reportId).orElseThrow( () -> new IllegalArgumentException("No record of such report"));
-        return new ResponseEntity<>(report,HttpStatus.OK);
+      //  ReportDto reportDto = mapToReport(report);
+
+        return ResponseEntity.ok(report);
     }
 
     @Override
     public ResponseEntity<List<Report>> getAllReports() {
+
         List<Report> reports = reportRepository.findAll();
+       // List<ReportDto> reportDto = reports.stream().map(this::mapToReport).toList();
+
         if (reports.isEmpty()){
             throw new NoSuchMessageException("No reports available");
         }
         return new ResponseEntity<>(reports,HttpStatus.OK);
+    }
+    private ReportDto mapToReport(Report report){
+        return new ReportDto().builder()
+                .author(report.getAuthor())
+                .message(report.getMessage())
+                .build();
     }
 }

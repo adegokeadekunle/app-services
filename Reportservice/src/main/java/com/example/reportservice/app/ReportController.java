@@ -17,14 +17,16 @@ public class ReportController {
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
     ResponseEntity<Report> createReport(@RequestBody Report report){
+
         return reportService.createReport(report);
     }
+
     @GetMapping("/get")
     @ResponseStatus(HttpStatus.OK)
     ResponseEntity<Report> getReport(Long reportId){
         return reportService.getReport(reportId);
-
     }
+
     @GetMapping("/get-all")
     @ResponseStatus(HttpStatus.OK)
     ResponseEntity<List<Report>> getAllReports(){

@@ -7,6 +7,8 @@ import jakarta.persistence.Id;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import reactor.core.CoreSubscriber;
+import reactor.core.publisher.Mono;
 
 import java.time.LocalDateTime;
 
@@ -17,7 +19,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 
-public class Report {
+public class Report extends Mono<Report> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -29,4 +31,8 @@ public class Report {
     @UpdateTimestamp
     private LocalDateTime updatedAt;
 
+    @Override
+    public void subscribe(CoreSubscriber<? super Report> coreSubscriber) {
+
+    }
 }

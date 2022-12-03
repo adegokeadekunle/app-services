@@ -1,7 +1,6 @@
 package com.example.appservice;
 
 import com.example.appservice.app.AppRepository;
-import com.example.appservice.app.AppServicesEnum;
 import com.example.appservice.app.Application;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;

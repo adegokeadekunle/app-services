@@ -31,11 +31,11 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Appservice" options="-parameters --add-modules java.base" />
       <module name="Loginservice" options="-parameters --add-modules java.base" />
-      <module name="Reportservice" options="-parameters" />
+      <module name="Reportservice" options="-parameters --add-modules java.base" />
       <module name="SYTYCC" options="-parameters" />
       <module name="blacklist" options="-parameters --add-modules java.base" />
       <module name="notificationservice" options="-parameters" />
-      <module name="setting" options="-parameters" />
+      <module name="setting" options="-parameters --add-modules java.base" />
       <module name="user" options="-parameters" />
     </option>
   </component>
